@@ -9,7 +9,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -403,7 +403,7 @@
     </section>
 
     <script>
-      const appURL = "http://localhost:8000";
+      const appURL = window.location.href;
 
       $(".slider").slick({
         slidesToShow: 5,
@@ -449,12 +449,13 @@
           } else {
             document.getElementById("success").className = "text-danger";
             document.getElementById("success").innerText =
-              "SomtHIIIng went wrong with submiting your Inquery, please try again after some time!";
+              "Somthing went wrong with submiting your Inquery, please try again after some time!";
           }
         } catch (error) {
+          console.log(error)
           document.getElementById("success").className = "text-danger";
           document.getElementById("success").innerText =
-            "SomtHIIIng went wrong with submiting your Inquery, please try again after some time!";
+            "Somthing went wrong with submiting your Inquery, please try again after some time!";
         }
       };
     </script>
