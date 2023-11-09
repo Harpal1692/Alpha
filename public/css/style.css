@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+.benner-section {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 90vh;
+}
+
+.bg {
+  height: 100%;
+  background: url("../img/Alfa-background.jpg") center center/cover no-repeat;
+  background-position-y: top;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.bg2 {
+  height: 100%;
+  background: url("../img/03.png") center center/cover no-repeat;
+  background-position-y: top;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.bg::after {
+  content: "";
+  background: black;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.35;
+}
+.bg2::after {
+  content: "";
+  background: black;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.45;
+}
+
+.content {
+  color: yellow;
+  position: absolute;
+  bottom: 0;
+  top: 10%;
+  z-index: 1;
+}
+
+.first_head {
+  color: #ffe100;
+}
+
+.btn-warning {
+  background: #fab005 !important;
+}
+
+.btn-warning:hover {
+  background: #f59f00 !important;
+}
+
+.gallary_img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.gallary_img i {
+  font-size: 34px;
+  display: block;
+  width: 100%;
+  font-weight: bolder;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 1rem;
+}
+
+.gallery-section {
+  background: black;
+}
+
+.form_section {
+  background: black;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  padding-right: 2rem;
+  border: none;
+  border-bottom: 1px solid #ffffff6e;
+  background: transparent;
+  outline: none;
+  color: white;
+}
+
+.form {
+  border: 2px solid white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.input {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.input i {
+  position: absolute;
+  right: 10px;
+}
+
+.about {
+  background: black;
+}
+
+.icon_grid {
+  padding: 1rem;
+  border-radius: 5px;
+  background: #f59f00;
+  color: white;
+}
+
+.footer {
+  background: black;
+  border-top: 1px solid #0a2b3f;
+}
+
+.fix_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.fix_footer i {
+  font-size: 2.5rem;
+}
+
+.right i {
+  color: #38bf4b;
+  font-size: 4rem;
+  line-height: 0;
+}
+.fix_footer a:nth-child(1) i {
+  color: #35ace1;
+}
+
+.fix_footer a:nth-child(2) i {
+  color: #38bf4b;
+}
+
+.fix_footer a:nth-child(3) i {
+  color: #1977f3;
+}
+.fix_footer a:nth-child(4) i {
+  color: #d9297f;
+}
+
+.dealling_terms {
+  width: 40%;
+}
+
+.about_width {
+  width: 60%;
+}
+.main-heading {
+  color: #ffe100;
+  font-size: 6rem;
+}
+.primary-heading {
+  color: #ffe100;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.secondary-heading {
+  color: #ffe100;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.button_top {
+  width: 25%;
+  background-color: #ffe100 !important;
+}
+
+.kyc-div {
+  width: 100%;
+  background-color: #ffe100;
+  text-align: center;
+  font-size: 1.2rem;
+  transform: skewX(-15deg);
+  font-weight: bold;
+  padding: 0.5rem;
+  box-shadow: rgb(255, 255, 255) -6px 6px 0px;
+}
+.support-grp {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .content .buttons {
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .support-grp {
+    flex-direction: column !important;
+  }
+
+  .dealling_terms {
+    width: 100%;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .button-main {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  } */
+  .button_top {
+    width: 100%;
+  }
+  .main-heading {
+    font-size: 3rem;
+  }
+  .primary-heading {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .secondary-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .first_head {
+    font-size: 2.2rem !important;
+  }
+  span {
+    font-size: 3.1rem !important;
+  }
+
+  .about_width {
+    width: 100%;
+  }
+  .hero {
+    width: 100%;
+    height: 40vh;
+  }
+}
